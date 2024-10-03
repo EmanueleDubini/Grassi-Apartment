@@ -1,0 +1,197 @@
+
+/* ------------ CUSTOM PROPERTIES ------------ */
+:root{
+    /* FONT */
+    /*--fontLobster: 'Lobster', sans-serif;
+    --fontNunito: 'Nunito Sans', sans-serif;*/
+
+    /* COLORS */
+    --White: #F6F6F9;
+    --PrimaryColor: #18480d;
+    --SecondaryColor: #a7c957;
+    --TertiaryLightBlue: #4C7CF8;
+    --TertiraryGreen: #1DCD9F;
+    --TertiaryPink: #F63A99;
+    --VariantColor: #8090E7;
+}
+
+h1, h2, h3 {
+    /*font-family: var(--fontLobster), sans-serif;*/
+}
+
+h1, h2, h3, h4, h5, p, li, a{
+    /*color: var(--White);*/
+}
+
+h1 {
+    font-size: clamp(2.133rem, 4vw + 1rem, 3rem); /* h1 è la base */
+}
+
+h2 {
+    font-size: clamp(1.5rem, 3vw + 0.75rem, 2.5rem); /* h2 è circa il 70-80% di h1 */
+}
+
+h3, h4 {
+    font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem); /* h3 e h4 leggermente più piccoli */
+}
+
+p {
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.5rem); /* p è circa la metà dell'h1 */
+}
+
+
+
+.navbar {
+   background-color: var(--White);
+    height: 80px;
+    margin: 20px; /*per rendere staccata la navbar*/
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--SecondaryColor);
+    transition: 0.3s color;
+}
+
+.login-button {
+    background-color: var(--SecondaryColor);
+    color: var(--White);
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: var(--PrimaryColor);
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+@media (min-width: 991px) {
+    .nav-link:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--PrimaryColor);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        background-color: var(--SecondaryColor);
+        visibility: visible;
+        width: 100%;
+    }
+}
+
+.hero-section {
+    background: var(--PrimaryColor);
+    /*background: url(../img/Loghi/grossi-apartment-logo.png) no-repeat center;*/ /*per inserire l'immagine di sfondo*/
+    background-size: cover;
+    width: 100%;
+}
+
+/*.hero-section::before { !*per rendere oscurato lo sfondo della hero*!
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}*/
+
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-weight: 800;
+    color: var(--White);
+}
+
+.hero-section h2 {
+    font-weight: 700;
+    color: var(--White);
+}
+
+.hero-section p {
+    font-size: clamp(0.9rem, 1.25vw + 0.25rem, 1.3rem); /* Più piccolo del valore attuale */
+    color: var(--White);
+}
+.custom-logo {
+    width: 35vw;   /* Imposta la larghezza come il 30% della viewport */
+    max-width: 100%;  /* Impedisce che l'immagine superi il contenitore */
+    height: auto;  /* Mantiene il rapporto d'aspetto */
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 20px;
+    border-radius: 4px;
+}
+.button-primary {
+    position: relative;
+    background-color: var(--SecondaryColor);
+    color: var(--White);
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: color 0.3s ease-in;
+    z-index: 1;
+    text-decoration: none;
+}
+.button-primary:hover {
+    color: var(--SecondaryColor);
+}
+.button-primary::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: var(--White);
+    border-radius: 4px;
+    opacity: 0;
+    -webkit-transform: scaleX(0.8);
+    -ms-transform: scaleX(0.8);
+    transform: scaleX(0.8);
+    transition: all 0.3s ease-in;
+    z-index: -1;
+}
+.button-primary:hover::after {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}

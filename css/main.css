@@ -145,11 +145,12 @@ p {
 }
 
 .hero-section p {
-    font-size: clamp(0.9rem, 1.25vw + 0.25rem, 1.3rem); /* Più piccolo del valore attuale */
+    font-size: clamp(1.1rem, 2.5vw + 0.25rem, 1.5rem);
     color: var(--White);
 }
 .custom-logo {
-    width: 35vw;   /* Imposta la larghezza come il 30% della viewport */
+    width: clamp(330px, 35vw, 650px); /* Min 200px, 35vw preferito per desktop, max 300px */
+    /* width: 35vw;  /* Imposta la larghezza come il 30% della viewport */
     max-width: 100%;  /* Impedisce che l'immagine superi il contenitore */
     height: auto;  /* Mantiene il rapporto d'aspetto */
 }

@@ -199,3 +199,61 @@ p {
     -ms-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+
+
+/* Sezione Informazioni */
+.informazioni-section {
+    /* Puoi aggiungere stili personalizzati qui */
+}
+
+.informazioni-section h2 {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+}
+
+.informazioni-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.informazioni-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.informazioni-section ul li i {
+    margin-right: 10px;
+}
+
+/* Sezione Posizione */
+.posizione-section {
+    /* Puoi aggiungere stili personalizzati qui */
+}
+
+.posizione-section h2 {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+}
+
+.posizione-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.posizione-section ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.posizione-section ul li i {
+    margin-right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .informazioni-section .col-md-6,
+    .posizione-section .col-md-6 {
+        text-align: center;
+    }
+}

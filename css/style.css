@@ -240,6 +240,11 @@ p {
     font-size: 1.2rem;
 }
 
+.benvenuto-section .col-md-4 img {
+    width: 100%;
+    height: clamp(200px, 25vw, 300px); /* Cambia altezza in modo dinamico */
+}
+
 /* ------------ Sezione Posizione ------------ */
 .posizione-section h2 {
     color: var(--PrimaryColor);
@@ -269,4 +274,48 @@ p {
     .benvenuto-section .col-md-4 {
         margin-bottom: 20px;
     }
+}
+
+/* ------------ Sezione Galleria ------------ */
+.galleria-section {
+    max-height: 85vh;
+    overflow: hidden;
+}
+
+.galleria-section h2 {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+}
+
+.galleria-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#carouselGalleria {
+    position: relative;
+    max-height: 80vh;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 80vh;
+    object-fit: contain; /* Mantiene le proporzioni senza ritagliare l'immagine */
+    object-position: center; /* Centra l'immagine verticalmente e orizzontalmente */
+    display: block;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 50%, 50%;
+    background-position: center;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 fill%3D%22%23FFFFFF%22 viewBox%3D%220 0 16 16%22%3E%3Cpath d%3D%22M11.354 1.354a.5.5 0 0 0-.708 0L4 8l6.646 6.646a.5.5 0 0 0 .708-.708L5.707 8l5.647-5.646a.5.5 0 0 0 0-.708z%22/%3E%3C/svg%3E');
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 fill%3D%22%23FFFFFF%22 viewBox%3D%220 0 16 16%22%3E%3Cpath d%3D%22M4.646 1.354a.5.5 0 0 1 .708 0L12 8l-6.646 6.646a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z%22/%3E%3C/svg%3E');
 }

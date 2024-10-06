@@ -319,3 +319,166 @@ p {
 .carousel-control-next-icon {
     background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 fill%3D%22%23FFFFFF%22 viewBox%3D%220 0 16 16%22%3E%3Cpath d%3D%22M4.646 1.354a.5.5 0 0 1 .708 0L12 8l-6.646 6.646a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z%22/%3E%3C/svg%3E');
 }
+
+
+
+/* ------------ Footer ------------ */
+.footer-section {
+    background-color: var(--PrimaryColor);
+    color: var(--White);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .footer-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+}
+
+.footer-section h5 {
+    color: var(--SecondaryColor);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footer-section p, .footer-section li, .footer-section a {
+    color: var(--White);
+    font-size: 0.85rem;
+}
+
+.footer-section a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--SecondaryColor);
+}
+
+.footer-section ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li i {
+    margin-right: 5px;
+    color: var(--SecondaryColor);
+}
+
+.footer-section hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Stile per i loghi dei partner */
+.partner-logos {
+    display: flex;
+    align-items: center;
+}
+
+.partner-logos a {
+    margin-right: 10px;
+}
+
+.partner-logo {
+    width: 80px;
+    height: auto;
+}
+
+.partner-logo:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .footer-section .col-6 {
+        margin-bottom: 0;
+    }
+    .footer-section h5 {
+        font-size: 0.9rem;
+    }
+    .footer-section p, .footer-section li, .footer-section a {
+        font-size: 0.8rem;
+    }
+    .footer-section .partner-logos {
+        justify-content: flex-start;
+    }
+}
+
+
+
+
+
+
+/* ------------ Pagina Contatti.html ------------ */
+/* ------------ Sezione Contatti ------------ */
+.contact-section {
+    background-color: #f9f9f9;
+}
+
+.contact-section h2 {
+    color: var(--PrimaryColor);
+    font-weight: 700;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-info {
+    font-size: 1rem;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info li i {
+    font-size: 1.5rem;
+    color: var(--SecondaryColor);
+    margin-right: 15px;
+}
+
+.contact-info li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info li a:hover {
+    text-decoration: underline;
+}
+
+/* Sezione Mappa */
+.contact-section iframe {
+    border: none;
+    border-radius: 8px;
+}
+
+/* ------------ Sezione Booking.com e Airbnb ------------ */
+.partner-logo-lg {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo-lg:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .partner-logo-lg {
+        width: 120px;
+    }
+}

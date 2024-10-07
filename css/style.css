@@ -218,7 +218,7 @@ p {
 }
 
 .benvenuto-section img {
-    width: 100%;
+    width: 65%;
     height: auto;
 }
 
@@ -242,7 +242,8 @@ p {
 
 .benvenuto-section .col-md-4 img {
     width: 100%;
-    height: clamp(200px, 25vw, 300px); /* Cambia altezza in modo dinamico */
+    /*height: clamp(250px, 25vw, 300px); !* Cambia altezza in modo dinamico *!*/
+    height: auto;
 }
 
 /* ------------ Sezione Posizione ------------ */

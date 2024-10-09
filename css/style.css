@@ -15,6 +15,8 @@
     --VariantColor: #fff;
 }
 
+
+/* ------------ GLOBAL STYLES ------------ */
 h1, h2, h3 {
     /*font-family: var(--fontLobster), sans-serif;*/
 }
@@ -39,12 +41,17 @@ p {
     font-size: clamp(1rem, 1.5vw + 0.25rem, 1.5rem); /* p è circa la metà dell'h1 */
 }
 
+
+/* ------------ Navbar ------------ */
 .navbar {
     background-color: var(--White);
     height: 80px;
     margin: 20px; /*per rendere staccata la navbar*/
     border-radius: 16px;
-    padding: 0.5rem;
+    /*padding: 0.5rem;*/
+
+    padding: 0.5rem 1rem;
+
 }
 
 .navbar-brand {
@@ -111,12 +118,31 @@ p {
     }
 }
 
+
+/* ------------ Hero Section index.html ------------ */
 .hero-section {
     background: var(--PrimaryColor);
-    /*background: url(../img/Loghi/grossi-apartment-logo.png) no-repeat center;*/
+    width: 100%;
+/*    display: flex;
+    align-items: center;*/
+    min-height: 100vh;
+    padding-top: 18vh;
+    padding-bottom: 20px;
+}
+
+.hero-section .container {
+    z-index: 1;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/*.hero-section {
+    background: var(--PrimaryColor);
+    !*background: url(../img/Loghi/grossi-apartment-logo.png) no-repeat center;*!
     background-size: cover;
     width: 100%;
-}
+}*/
 
 /*.hero-section::before {
     background-color: rgba(0, 0, 0, 0.6);
@@ -128,11 +154,11 @@ p {
     top: 0;
 }*/
 
-.hero-section .container {
+/*.hero-section .container {
     height: 100vh;
     z-index: 1;
     position: relative;
-}
+}*/
 
 .hero-section h1 {
     font-weight: 800;
@@ -422,6 +448,21 @@ p {
 
 
 /* ------------ Pagina Contatti.html ------------ */
+/* ------------ Hero Section per Contatti ------------ */
+.hero-contatti {
+    min-height: 55vh; /* Altezza ridotta rispetto alla homepage */
+
+}
+
+.hero-contatti h1 {
+    font-weight: 800;
+    color: var(--White);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-top: 0;
+}
+
+
+
 /* ------------ Sezione Contatti ------------ */
 .contact-section {
     background-color: #f9f9f9;

@@ -32,12 +32,12 @@ h1 {
 }
 
 h2 {
-    font-size: clamp(1.5rem, 3vw + 0.75rem, 2.5rem); /* h2 è circa il 70-80% di h1 */
+    font-size: clamp(1.85rem, 3vw + 0.75rem, 2.5rem); /* h2 è circa il 70-80% di h1 */
     font-weight: 700;
 }
 
 h3, h4 {
-    font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem); /* h3 e h4 leggermente più piccoli */
+    font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2rem); /* h3 e h4 leggermente più piccoli */
     font-weight: 600;
 }
 
@@ -102,6 +102,12 @@ p {
 
 .nav-link:hover, .nav-link.active {
     color: var(--Black);
+}
+
+.offcanvas-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--PrimaryColor);
 }
 
 @media (min-width: 991px) {
@@ -248,7 +254,7 @@ p {
 }
 
 .benvenuto-section img {
-    width: 50%;
+    width: 80%;
     height: auto;
 }
 
@@ -266,7 +272,7 @@ p {
 
 /* Stile per il testo della lista */
 .feature-text {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.1rem);
 }
 
 /* Icone nella lista */
@@ -291,7 +297,7 @@ p {
 }
 
 .posizione-section ul li {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.1rem);
     margin-bottom: 10px;
 }
 

@@ -1,24 +1,25 @@
+
+/* ------------ GOOGLE FONTS ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500..800;1,200..1000&display=swap');
+
 /* ------------ CUSTOM PROPERTIES ------------ */
 :root{
     /* FONT */
-    /*--fontLobster: 'Lobster', sans-serif;
-    --fontNunito: 'Nunito Sans', sans-serif;*/
+    /*--fontLobster: 'Lobster', sans-serif;*/
+    --fontNunito: 'Nunito', sans-serif;
 
     /* COLORS */
     --White: #F6F6F9;
     --Black: #000;
     --PrimaryColor: #18480d;
     --SecondaryColor: #a7c957;
-    --TertiaryLightBlue: #fff;
-    --TertiraryGreen: #fff;
-    --TertiaryPink: #fff;
-    --VariantColor: #fff;
+    --ParagraphColor: #333;
 }
 
 
 /* ------------ GLOBAL STYLES ------------ */
-h1, h2, h3 {
-    /*font-family: var(--fontLobster), sans-serif;*/
+h1, h2, h3, h4, h5 {
+    font-family: var(--fontNunito), sans-serif;
 }
 
 h1, h2, h3, h4, h5, p, li, a{
@@ -27,18 +28,22 @@ h1, h2, h3, h4, h5, p, li, a{
 
 h1 {
     font-size: clamp(2.133rem, 4vw + 1rem, 3rem); /* h1 è la base */
+    font-weight: 800;
 }
 
 h2 {
     font-size: clamp(1.5rem, 3vw + 0.75rem, 2.5rem); /* h2 è circa il 70-80% di h1 */
+    font-weight: 700;
 }
 
 h3, h4 {
     font-size: clamp(1.25rem, 2.5vw + 0.5rem, 2rem); /* h3 e h4 leggermente più piccoli */
+    font-weight: 600;
 }
 
 p {
-    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.5rem); /* p è circa la metà dell'h1 */
+    font-size: clamp(1rem, 1.5vw + 0.25rem, 1.1rem); /* p è circa la metà dell'h1 */
+    color: var(--ParagraphColor);
 }
 
 
@@ -55,8 +60,9 @@ p {
 }
 
 .navbar-brand {
+    font-family: var(--fontNunito), sans-serif;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--SecondaryColor);
     transition: 0.3s color;
 }
@@ -89,7 +95,7 @@ p {
 
 .nav-link {
     color: #666777;
-    font-weight: 500;
+    font-weight: 600;
     position: relative;
 }
 
@@ -161,12 +167,10 @@ p {
 }*/
 
 .hero-section h1 {
-    font-weight: 800;
     color: var(--White);
 }
 
 .hero-section h2 {
-    font-weight: 700;
     color: var(--White);
 }
 
@@ -174,6 +178,7 @@ p {
     font-size: clamp(1.1rem, 2.5vw + 0.25rem, 1.5rem);
     color: var(--White);
 }
+
 .custom-logo {
     width: clamp(330px, 35vw, 650px); /* Min 330px, 35vw preferito per desktop, max 650px */
     max-width: 100%;  /* Impedisce che l'immagine superi il contenitore */
@@ -222,10 +227,10 @@ p {
     transform: scaleX(1);
 }
 
-/* ------------ Sezione Benvenuto ------------ */
+
+/* ------------ Sezione Benvenuto index.html ------------ */
 .benvenuto-section h2 {
     color: var(--PrimaryColor);
-    font-weight: 700;
 }
 
 .benvenuto-section .row .col-md-6 img {
@@ -234,13 +239,11 @@ p {
 
 .benvenuto-section h3 {
     color: var(--SecondaryColor);
-    font-weight: 600;
     margin-top: 20px;
 }
 
 .benvenuto-section p {
-    font-size: 1rem;
-    color: #333;
+    /* se si desidera modificare lo stile del paragrafo*/
 }
 
 .benvenuto-section img {
@@ -272,15 +275,13 @@ p {
     height: auto;
 }
 
-/* ------------ Sezione Posizione ------------ */
+/* ------------ Sezione Posizione index.html ------------ */
 .posizione-section h2 {
     color: var(--PrimaryColor);
-    font-weight: 700;
 }
 
 .posizione-section p {
-    font-size: 1.1rem;
-    color: #333;
+    /* se si desidera modificare lo stile del paragrafo*/
 }
 
 .posizione-section ul li {
@@ -303,7 +304,7 @@ p {
     }
 }
 
-/* ------------ Sezione Galleria ------------ */
+/* ------------ Sezione Galleria index.html ------------ */
 .galleria-section {
     max-height: 85vh;
     overflow: hidden;
@@ -311,12 +312,10 @@ p {
 
 .galleria-section h2 {
     color: var(--PrimaryColor);
-    font-weight: 700;
 }
 
 .galleria-section p {
-    font-size: 1.1rem;
-    color: #333;
+    /* se si desidera modificare lo stile del paragrafo*/
 }
 
 #carouselGalleria {
@@ -455,7 +454,6 @@ p {
 }
 
 .hero-contatti h1 {
-    font-weight: 800;
     color: var(--White);
     font-size: clamp(2rem, 5vw, 3rem);
     margin-top: 0;
@@ -470,16 +468,19 @@ p {
 
 .contact-section h2 {
     color: var(--PrimaryColor);
+}
+
+.contact-section h3 {
+    color: var(--PrimaryColor);
     font-weight: 700;
 }
 
 .contact-section p {
-    font-size: 1.1rem;
-    color: #333;
+    /* se si desidera modificare lo stile del paragrafo*/
 }
 
 .contact-info {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .contact-info li {
@@ -494,7 +495,7 @@ p {
 }
 
 .contact-info li a {
-    color: #333;
+    color: var(--ParagraphColor);
     text-decoration: none;
 }
 

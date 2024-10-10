@@ -61,7 +61,7 @@ p {
 
 .navbar-brand {
     font-family: var(--fontNunito), sans-serif;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--SecondaryColor);
     transition: 0.3s color;
@@ -94,6 +94,7 @@ p {
 }
 
 .nav-link {
+    font-size: 1.2rem;
     color: #666777;
     font-weight: 600;
     position: relative;
@@ -263,10 +264,15 @@ p {
     margin-bottom: 10px;
 }
 
+/* Stile per il testo della lista */
+.feature-text {
+    font-size: 1.1rem;
+}
+
 /* Icone nella lista */
 .benvenuto-section ul li i {
     margin-right: 10px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .benvenuto-section .col-md-4 img {
@@ -285,12 +291,13 @@ p {
 }
 
 .posizione-section ul li {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
 .posizione-section ul li i {
     margin-right: 10px;
+    font-size: 1.3rem;
 }
 
 /* Responsive Adjustments */

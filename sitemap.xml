@@ -13,4 +13,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- voce per il logo -->
+  <url>
+    <loc>https://www.grossi-apartment.it/img/logo.png</loc>
+    <lastmod>2024-10-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
